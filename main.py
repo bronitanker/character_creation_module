@@ -1,5 +1,4 @@
 from random import randint
-from types import NoneType
 
 
 def attack(char_name: str, char_class: str) -> str:
@@ -62,8 +61,8 @@ def choice_char_class() -> str:
     char_class: str = None
     while approve_choice != 'y':
         char_class = input('Введи название персонажа, за которого '
-                                'хочешь играть: Воитель — warrior, Маг — '
-                                'mage, Лекарь — healer: ')
+                           'хочешь играть: Воитель — warrior, Маг — '
+                           'mage, Лекарь — healer: ')
         if char_class == 'warrior':
             print('Воитель — дерзкий воин ближнего боя. '
                   'Сильный, выносливый и отважный.')
